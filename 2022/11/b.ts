@@ -9,7 +9,6 @@ class Monkey {
   trueThrowMoneyId: number;
   falseThrowMonkeyId: number;
   totalOperations: number;
-  lcm!: number;
 
   constructor(
     items: number[],
@@ -74,7 +73,6 @@ function solution(input: string) {
       ),
     );
   }
-  // mathjs.lcm(...monkeys.map((x) => x.testNumber));
   const arr = monkeys.map((x) => x.testNumber);
   const lcm = mathjs.lcm(...arr);
   for (let i = 0; i < ITERATIONS; i++) {
